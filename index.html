@@ -21,7 +21,7 @@
     />
     <meta
       name="description"
-      content="With most of experience in building user interfaces, I also have a solid background in backend development. I have experience in building complex user interaces, scalable and performant systems, mentoring junior developers. I work mostly with TypeScript, React, Node.js and passionate about Rust."
+      content="With most of my experience in building user interfaces, I possess a solid experience in backend development. My expertise extends to creating scalable and high-performance systems, along with mentoring junior developers. My primary tools include TypeScript, React, and Node.js, and I have a keen interest in Rust. Over my 12-year career, I have gained experience working in both startups and and big companies."
     />
 
     <!-- prettier-ignore -->
@@ -87,6 +87,7 @@
       .scroll-my-12 { scroll-margin-top: 3rem; scroll-margin-bottom: 3rem; }
 
         /* Appearence */
+      .hidden { display: none; }
       .rounded-md { border-radius: calc(var(--radius) - 2px); }
       .rounded-xl { border-radius: 0.75rem; }
       .border { border: 1px solid hsl(var(--border));}
@@ -110,7 +111,8 @@
       /* Media Overrides */
       @media (min-width: 768px) { .md\:p-16 { padding: 4rem; } }
       @media print { .p-12 { padding: 3rem; } }
-      @media print { .print\:hidden { visibility: hidden; } }
+      @media print { .print\:hidden { display: none; } }
+      @media print { .print\:flex { display: block; } }
     </style>
   </head>
 
@@ -153,7 +155,7 @@
                 Helsinki, Finland, EET
               </a>
             </address>
-            <div class="buttons flex gap-x-1 pt-1 print:hidden">
+            <div class="flex gap-x-1 pt-1 print:hidden">
               <a
                 href="mailto:hurricanebox@gmail.com"
                 class="inline-flex items-center justify-center rounded-md text-sm border border-input hover:bg-accent hover:text-accent-foreground h-8 w-8 text-secondary"
@@ -227,6 +229,11 @@
                 </svg>
               </a>
             </div>
+            <div
+              class="hidden flex-col gap-x-1 font-mono text-sm text-secondary print:flex"
+            >
+              <span class="underline">hurricanebox@gmail.com</span>
+            </div>
           </div>
           <img
             class="flex rounded-xl h-28 w-28"
@@ -238,18 +245,20 @@
         <section class="flex flex-col gap-y-3">
           <h2>About</h2>
           <p class="font-mono text-secondary">
-            With most of experience in building user interfaces, I also have a
-            solid background in backend development. I have experience in
-            building complex user interaces, scalable and performant systems,
-            mentoring junior developers. I work mostly with TypeScript, React,
-            Node.js and passionate about Rust. During 12 years of career I was
-            working in both startups and big companies.
+            With most of my experience in building user interfaces, I possess a
+            solid experience in backend development. My expertise extends to
+            creating scalable and high-performance systems, along with mentoring
+            junior developers. My primary tools include TypeScript, React, and
+            Node.js, and I have a keen interest in Rust. Over my 12-year career,
+            I have gained experience working in both startups and and big
+            companies.
           </p>
         </section>
 
         <section class="flex flex-col gap-y-3">
           <h2>Work Experience</h2>
-          <div class="rounded-lg bg-card text-card-foreground">
+
+          <div>
             <div class="flex flex-col space-y-1.5">
               <div class="flex items-center justify-between text-base">
                 <h3
@@ -274,11 +283,92 @@
               React, TypeScript, Node.js
             </div>
           </div>
+
+          <div>
+            <div class="flex flex-col space-y-1.5">
+              <div class="flex items-center justify-between text-base">
+                <h3
+                  class="inline-flex justify-center items-center leading-none"
+                >
+                  <a class="hover:underline" href="https://jobtoday.com"
+                    >JobToday</a
+                  >
+                </h3>
+                <div class="text-sm tabular-nums text-secondary">
+                  2018<!-- -->
+                  -
+                  <!-- -->2020
+                </div>
+              </div>
+              <h4 class="leading-none font-mono">Senior Frontend Engineer</h4>
+            </div>
+            <div class="text-secondary text-xs font-mono mt-2">
+              Architecting and developing JOB TODAY native and web apps (mobile
+              + desktop). Managing common crossplatform codebase, leading small
+              projects in group of 3 people. Technologies: React, React Native,
+              Redux, TypeScript, Node.js
+            </div>
+          </div>
+
+          <div>
+            <div class="flex flex-col space-y-1.5">
+              <div class="flex items-center justify-between text-base">
+                <h3
+                  class="inline-flex justify-center items-center leading-none"
+                >
+                  <a
+                    class="hover:underline"
+                    href="https://cloud.yandex.com/en/services/tracker"
+                    >Yandex</a
+                  >
+                </h3>
+                <div class="text-sm tabular-nums text-secondary">
+                  2013<!-- -->
+                  -
+                  <!-- -->2018
+                </div>
+              </div>
+              <h4 class="leading-none font-mono">Frontend Engineer</h4>
+            </div>
+            <div class="text-secondary text-xs font-mono mt-2">
+              Building UI for Yandex.Tracker (Task Management System).
+              Technologies: JavaScript, jQuery, React, Redux, Node.js
+            </div>
+          </div>
+
+          <div>
+            <div class="flex flex-col space-y-1.5">
+              <div class="flex items-center justify-between text-base">
+                <h3
+                  class="inline-flex justify-center items-center leading-none"
+                >
+                  <a
+                    class="hover:underline"
+                    href="https://cloud.yandex.com/en/services/tracker"
+                    >Fotostrana</a
+                  >
+                </h3>
+                <div class="text-sm tabular-nums text-secondary">
+                  2011<!-- -->
+                  -
+                  <!-- -->2013
+                </div>
+              </div>
+              <h4 class="leading-none font-mono">Software Engineer</h4>
+            </div>
+            <div class="text-secondary text-xs font-mono mt-2">
+              As a full stack engineer: developed key website components focused
+              on attracting new users. This includes crafting user-friendly
+              landing pages, and implementing efficient mailing systems.
+              Technologies: PHP, MySQL, Memcached, Zend Framework, JavaScript,
+              jQuery
+            </div>
+          </div>
         </section>
 
         <section class="flex flex-col gap-y-3">
           <h2>Education</h2>
-          <div class="rounded-lg bg-card text-card-foreground">
+          <div>
             <div class="flex flex-col space-y-1.5">
               <div class="flex items-center justify-between gap-x-2 text-base">
                 <h3 class="font-semibold leading-none">
