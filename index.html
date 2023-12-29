@@ -10,8 +10,8 @@
       rel="stylesheet"
     />
     <title>
-      Anton Kalinin | Full Stack Engineer with solid experinece in React,
-      TypeScript and Node.js
+      Anton Kalinin | Full Stack Engineer with solid experinece in React,<!--
+      -->TypeScript and Node.js
     </title>
     <link
       rel="icon"
@@ -21,198 +21,112 @@
     />
     <meta
       name="description"
-      content="As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world."
+      content="With most of experience in building user interfaces, I also have a solid background in backend development. I have experience in building complex user interaces, scalable and performant systems, mentoring junior developers. I work mostly with TypeScript, React, Node.js and passionate about Rust."
     />
 
+    <!-- prettier-ignore -->
     <style>
       :root {
         --primary: 220.9 39.3% 11%;
-        --foreground: 224 71.4% 4.1%;
-        --primary-foreground: 210 20% 98%;
-        --text-color-secondary: 220 8.9% 46.1%;
-        --border-color: 220 13% 91%;
+        --text-secondary: 220 8.9% 46.1%;
+        --text-primary-foreground: 210 20% 98%;
+        --accent: 220 14.3% 95.9%;
+        --accent-foreground: 220.9 39.3% 11%;
+        --border: 220 13% 91%;
         --radius: 0.5rem;
       }
 
-      *,
-      :after,
-      :before {
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Inter", sans-serif;
-        font-style: normal;
-        margin: 0;
-        padding: 0;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: inherit;
-      }
-
-      main {
-        position: relative;
-        padding: 1rem;
-        scroll-margin-top: 3rem;
-        scroll-margin-bottom: 3rem;
-      }
-
-      @media (min-width: 768px) {
-        main {
-          padding: 4rem;
-        }
-      }
-
-      /* prettier-ignore */
+      *, :after, :before { box-sizing: border-box; }
+      body { font-family: "Inter", sans-serif; margin: 0; padding: 0; }
+      a { color: inherit; text-decoration: inherit; }
       h1, h2, h3, h4, p { margin: 0; text-wrap: pretty; }
-      /* prettier-ignore */
       h1 { font-size: 1.5rem; line-height: 2rem; font-weight: 700; }
-      /* prettier-ignore */
       h2 { font-size: 1.25rem; line-height: 1.75rem; font-weight: 700; }
-      /* prettier-ignore */
       h3 { font-size: 1rem; line-height: 1.5rem; font-weight: 600; }
-      /* prettier-ignore */
       h4 { font-size: 0.875rem; line-height: 1.25rem; font-weight: 400; }
-      /* prettier-ignore */
       p { font-size: 0.875rem; line-height: 1.25rem }
-      /* prettier-ignore */
       address { font-size: 0.875rem; line-height: 1rem; font-style: normal; }
 
-      section {
-        display: flex;
-        flex-direction: column;
-        row-gap: 0.75rem;
-        margin-top: 2rem;
-      }
-
-      .avatar {
-        display: flex;
-        height: 7rem;
-        width: 7rem;
-        border-radius: 0.75rem;
-      }
-
-      .buttons {
-        flex: 1;
-        display: flex;
-        column-gap: 0.25rem;
-        padding-top: 0.25rem;
-      }
-
-      .buttons a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 2rem;
-        height: 2rem;
-        color: hsl(var(--text-color-secondary));
-        text-decoration: none;
-
-        border: 1px solid hsl(var(--border-color));
-        border-radius: calc(var(--radius) - 2px);
-
-        transition-property: color, background-color, border-color,
-          text-decoration-color, fill, stroke;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 0.15s;
-      }
-
-      /* Flex */
-
-      /* prettier-ignore */
+      /* Positioning */
+      .relative { position: relative; }
       .inline-flex { display: inline-flex; }
-      /* prettier-ignore */
       .flex { display: flex;}
-      /* prettier-ignore */
       .flex-1 { flex: 1 1 0%;}
-      /* prettier-ignore */
       .flex-col { flex-direction: column; }
-      /* prettier-ignore */
-      .justify-between { justify-content: space-between; }
-      /* prettier-ignore */
+      .flex-wrap { flex-wrap: wrap; }
       .items-center { align-items: center; }
+      .justify-center { justify-content: center; }
+      .justify-between { justify-content: space-between; }
 
       /* Colors */
-
-      /* prettier-ignore */
       .bg-primary\/80 { background-color: hsl(var(--primary) / 0.8); }
 
-      /* Gaps, Paddings, Margins, Widths & Heights */
-
-      /* prettier-ignore */
+      /* Spacing */
+      .p-4 { padding: 1rem; }
+      .pt-1 { padding-top: 0.25rem; }
       .py-0\.5 { padding-top: 0.125rem; padding-bottom: 0.125rem; }
-      /* prettier-ignore */
       .px-2 { padding-left: 0.5rem; padding-right: 0.5rem }
-      /* prettier-ignore */
       .mt-2 { margin-top: 0.5rem; }
-      /* prettier-ignore */
       .mx-auto { margin-left: auto; margin-right: auto; }
-      /* prettier-ignore */
       .space-y-1\.5 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.375rem; }
-      /* prettier-ignore */
+      .space-y-8 > :not([hidden]) ~ :not([hidden]) { margin-top: 2rem; }
       .gap-1 { gap: 0.25rem; }
-      /* prettier-ignore */
+      .gap-x-1 { column-gap: 0.25rem; }
       .gap-y-3 { row-gap: 0.75rem; }
-      /* prettier-ignore */
       .gap-x-1\.5 { column-gap: 0.375rem; }
-      /* prettier-ignore */
       .h-3 { height: 0.75rem; }
-      /* prettier-ignore */
       .w-3 { width: 0.75rem; }
-      /* prettier-ignore */
       .h-4 { height: 1rem; }
-      /* prettier-ignore */
       .w-4 { width: 1rem; }
-      /* prettier-ignore */
       .h-8 { height: 2rem; }
-      /* prettier-ignore */
       .w-8 { width: 2rem; }
-      /* prettier-ignore */
+      .h-28 { width: 7rem; }
+      .w-28 { width: 7rem; }
       .max-w-md { max-width: 28rem; }
-      /* prettier-ignore */
       .max-w-2xl { max-width: 42rem; }
+      .scroll-my-12 { scroll-margin-top: 3rem; scroll-margin-bottom: 3rem; }
 
-      /* prettier-ignore */
+        /* Appearence */
       .rounded-md { border-radius: calc(var(--radius) - 2px); }
+      .rounded-xl { border-radius: 0.75rem; }
+      .border { border: 1px solid hsl(var(--border));}
 
       /* Text & Fonts */
-
-      /* prettier-ignore */
       .text-base { font-size: 1rem; line-height: 1.5rem; }
-      /* prettier-ignore */
       .text-sm { font-size: .875rem;; line-height: 1.25rem; }
-      /* prettier-ignore */
       .text-xs { font-size: .75rem; line-height: 1rem; }
-      /* prettier-ignore */
-      .text-color-secondary { color: hsl(var(--text-color-secondary)); }
-      /* prettier-ignore */
-      .text-primary-foreground { color: hsl(var(--primary-foreground)); }
-      /* prettier-ignore */
+      .text-secondary { color: hsl(var(--text-secondary)); }
+      .text-primary-foreground { color: hsl(var(--text-primary-foreground)); }
       .font-semibold { font-weight: 600; }
-      /* prettier-ignore */
       .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace; }
-      /* prettier-ignore */
       .leading-none { line-height: 1; }
-      /* prettier-ignore */
       .tabular-nums { font-variant-numeric: tabular-nums; }
-      /* prettier-ignore */
       .hover\:underline:hover { text-decoration-line: underline; }
+
+      /* Hover & Transitions */
+      .hover\:text-accent-foreground:hover { color: hsl(var(--accent-foreground)); }
+      .hover\:bg-accent:hover { background-color: hsl(var(--accent)); }
+
+      /* Media Overrides */
+      @media (min-width: 768px) { .md\:p-16 { padding: 4rem; } }
+      @media print { .p-12 { padding: 3rem; } }
+      @media print { .print\:hidden { visibility: hidden; } }
     </style>
   </head>
 
   <body>
-    <main class="mx-auto">
-      <div class="max-w-2xl mx-auto">
+    <main
+      class="relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 print:p-12"
+    >
+      <div class="max-w-2xl mx-auto space-y-8">
         <div class="flex items-center">
           <div class="flex-1 space-y-1.5">
             <h1>Anton Kalinin</h1>
-            <p class="max-w-md font-mono text-color-secondary">
+            <p class="max-w-md font-mono text-secondary">
               Full Stack Engineer with solid experinece in React, TypeScript and
               Node.js
             </p>
-            <address class="font-mono text-xs text-color-secondary">
+            <address class="font-mono text-xs text-secondary">
               <a
                 class="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
                 href="https://www.google.com/maps/place/Helsinki"
@@ -239,8 +153,11 @@
                 Helsinki, Finland, EET
               </a>
             </address>
-            <div class="buttons">
-              <a href="mailto:hurricanebox@gmail.com">
+            <div class="buttons flex gap-x-1 pt-1 print:hidden">
+              <a
+                href="mailto:hurricanebox@gmail.com"
+                class="inline-flex items-center justify-center rounded-md text-sm border border-input hover:bg-accent hover:text-accent-foreground h-8 w-8 text-secondary"
+              >
                 <svg
                   xmlns=" http://www.w3.org/2000/svg"
                   width="24"
@@ -258,7 +175,11 @@
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                 </svg>
               </a>
-              <a href="https://github.com/antonKalinin" target="_blank">
+              <a
+                target="_blank"
+                href="https://github.com/antonKalinin"
+                class="inline-flex items-center justify-center rounded-md text-sm border border-input hover:bg-accent hover:text-accent-foreground h-8 w-8 text-secondary"
+              >
                 <svg
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -272,8 +193,9 @@
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/anton-kalinin/"
                 target="_blank"
+                href="https://www.linkedin.com/in/anton-kalinin/"
+                class="inline-flex items-center justify-center rounded-md text-sm border border-input hover:bg-accent hover:text-accent-foreground h-8 w-8 text-secondary"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -287,7 +209,11 @@
                   ></path>
                 </svg>
               </a>
-              <a href="https://twitter.com/antonkaa" target="_blank">
+              <a
+                target="_blank"
+                href="https://twitter.com/antonkaa"
+                class="inline-flex items-center justify-center rounded-md text-sm border border-input hover:bg-accent hover:text-accent-foreground h-8 w-8 text-secondary"
+              >
                 <svg
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
@@ -303,25 +229,25 @@
             </div>
           </div>
           <img
-            class="avatar"
+            class="flex rounded-xl h-28 w-28"
             alt="Anton Kalinin"
             src="https://avatars.githubusercontent.com/u/3993255?v=4"
           />
         </div>
 
-        <section class="gap-y-3">
+        <section class="flex flex-col gap-y-3">
           <h2>About</h2>
-          <p class="font-mono text-color-secondary">
+          <p class="font-mono text-secondary">
             With most of experience in building user interfaces, I also have a
             solid background in backend development. I have experience in
             building complex user interaces, scalable and performant systems,
             mentoring junior developers. I work mostly with TypeScript, React,
-            Node.js and passionate about Rust. I have over 12 years of
-            experience, was working in both startups and big companies.
+            Node.js and passionate about Rust. During 12 years of career I was
+            working in both startups and big companies.
           </p>
         </section>
 
-        <section>
+        <section class="flex flex-col gap-y-3">
           <h2>Work Experience</h2>
           <div class="rounded-lg bg-card text-card-foreground">
             <div class="flex flex-col space-y-1.5">
@@ -331,7 +257,7 @@
                 >
                   <a class="hover:underline" href="https://wolt.com">Wolt</a>
                 </h3>
-                <div class="text-sm tabular-nums text-color-secondary">
+                <div class="text-sm tabular-nums text-secondary">
                   2020<!-- -->
                   -
                   <!-- -->2024
@@ -341,7 +267,7 @@
                 Software Engineer → Senior Software Engineer
               </h4>
             </div>
-            <div class="text-color-secondary text-xs font-mono mt-2">
+            <div class="text-secondary text-xs font-mono mt-2">
               As a full stack engineer: built collaborative and realtime tools
               for support associates, mentored an intern frontend engineer,
               worked on making systems scalable and performant. Technologies:
@@ -350,7 +276,7 @@
           </div>
         </section>
 
-        <section>
+        <section class="flex flex-col gap-y-3">
           <h2>Education</h2>
           <div class="rounded-lg bg-card text-card-foreground">
             <div class="flex flex-col space-y-1.5">
@@ -358,20 +284,20 @@
                 <h3 class="font-semibold leading-none">
                   Peter the Great St.Petersburg Polytechnic University
                 </h3>
-                <div class="text-sm tabular-nums text-color-secondary">
+                <div class="text-sm tabular-nums text-secondary">
                   2007<!-- -->
                   -
                   <!-- -->2013
                 </div>
               </div>
             </div>
-            <div class="font-mono text-sm text-color-secondary mt-2">
+            <div class="font-mono text-sm text-secondary mt-2">
               Master's Degree in Information Technology
             </div>
           </div>
         </section>
 
-        <section>
+        <section class="flex flex-col gap-y-3">
           <h2>Skills</h2>
           <div class="flex flex-wrap gap-1">
             <div
