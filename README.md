@@ -19,31 +19,10 @@
 
 </div>
 
----
-
-<table>
-<tr>
-<td width="60" align="center">👋</td>
-<td>
-
 **Hi, I'm Anton.** Product-minded fullstack engineer with over 15 years of production experience.
 I studied both design and engineering — engineering won, but the design background keeps me
 focused on building products that actually work for people. I work across the stack with
 `TypeScript`, `React`, `Node.js`, `Go`, and various databases, and I care most about solving
 real business problems end to end.
 
-</td>
-</tr>
-</table>
-
----
-
-<div align="center">
-
-### ✨ View the full CV
-
-**→ [antonkalinin.github.io/cv](https://antonkalinin.github.io/cv/) ←**
-
 <sub>This repository hosts the source for my online CV — a single, dependency-free HTML file.</sub>
-
-</div>
