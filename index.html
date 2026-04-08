@@ -1,31 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- prettier-ignore -->
-    <title>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- prettier-ignore -->
+        <title>
       Anton Kalinin | Product-Focused Fullstack Engineer
     </title>
-    <link
-      rel="icon"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAnlJREFUWEftl71L6mEUx79q4AuRDoKCg1YQ1H/QEoSjk4O4iKCDSBdKaKmLVzNfelk0MkQUXzYR9xalhuZoSmrISW4qCDmoOOjlPJDDLfBRvHoHz/L78fx+nPM53+ec8/AIAAgB/ATwA4Aas7F3ADcAQgIAbgD+2cT9EuUXAfyeYeZ/E7wTwGBO2bOwC4CFAhMrsLS0BIVCgcFggGazyZ6TGDeAUCiEwWCAyWTC9vY2VldXIRKJWEwCSKfT8Hg8aLfbY3FwA1itVmSzWea82+3i5eUFHx8fUCqV2NzchEAgwO3tLYMcRw1ugOXlZUSjURQKBZRKJXQ6nWGmpAitSaVS7O7u4v7+nlsFboBRHnO5HMxmM9sGv59/sk8N4OzsDEdHR4jFYtjb2xvFO/w+EQB1gFqthkQiYfXQaDQQDAZxeHiIeDwOp9P5bwCMRiP29/dZF4jF4mEQKrper8fWrq+v2T+8xq0A7avbTSc38Pr6ioeHB5Y5qaFSqVjxaTQaXFxcsK3gNS6AjY0NlMtl0CwgmcPh8JdWI+kdDgdOTk7g8/l44/OdhuSYAlQqFaytrX3rPJVKwWaz4fj4GOfn59MFODg4QCQSwdvbG9bX17841+l0eHp6glwuh9frxenp6XQB9Ho9isUic2q329nY/bSdnR1kMhlWBzKZDFdXV3C5XNMFoL2/u7sDBSN7fn5GtVqFVqsF1cfj4yMSiQSbAdSWrVYLgUCAdcQo4ypCcrKysgIaNhaLhb2T1et1JJNJhEIhbG1tIZ/PD+NdXl4yoFHGDfDpiE5Akrvf76NWq4118HwHMzbAqIzG/b4AWCjwX1zN5n45nev1/A9wS/LRu7n9GwAAAABJRU5ErkJggg=="
-      type="image/x-icon"
-      sizes="32x32"
-    />
-    <meta
-      name="description"
-      content="Product-minded fullstack engineer with over 15 years of production experience. Studied both design and engineering — engineering won, but the design background keeps me focused on building products that actually work for people. I work across the stack with TypeScript, React, Node.js, Go, and various databases."
-    />
+        <link
+            rel="icon"
+            href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAnlJREFUWEftl71L6mEUx79q4AuRDoKCg1YQ1H/QEoSjk4O4iKCDSBdKaKmLVzNfelk0MkQUXzYR9xalhuZoSmrISW4qCDmoOOjlPJDDLfBRvHoHz/L78fx+nPM53+ec8/AIAAgB/ATwA4Aas7F3ADcAQgIAbgD+2cT9EuUXAfyeYeZ/E7wTwGBO2bOwC4CFAhMrsLS0BIVCgcFggGazyZ6TGDeAUCiEwWCAyWTC9vY2VldXIRKJWEwCSKfT8Hg8aLfbY3FwA1itVmSzWea82+3i5eUFHx8fUCqV2NzchEAgwO3tLYMcRw1ugOXlZUSjURQKBZRKJXQ6nWGmpAitSaVS7O7u4v7+nlsFboBRHnO5HMxmM9sGv59/sk8N4OzsDEdHR4jFYtjb2xvFO/w+EQB1gFqthkQiYfXQaDQQDAZxeHiIeDwOp9P5bwCMRiP29/dZF4jF4mEQKrper8fWrq+v2T+8xq0A7avbTSc38Pr6ioeHB5Y5qaFSqVjxaTQaXFxcsK3gNS6AjY0NlMtl0CwgmcPh8JdWI+kdDgdOTk7g8/l44/OdhuSYAlQqFaytrX3rPJVKwWaz4fj4GOfn59MFODg4QCQSwdvbG9bX17841+l0eHp6glwuh9frxenp6XQB9Ho9isUic2q329nY/bSdnR1kMhlWBzKZDFdXV3C5XNMFoL2/u7sDBSN7fn5GtVqFVqsF1cfj4yMSiQSbAdSWrVYLgUCAdcQo4ypCcrKysgIaNhaLhb2T1et1JJNJhEIhbG1tIZ/PD+NdXl4yoFHGDfDpiE5Akrvf76NWq4118HwHMzbAqIzG/b4AWCjwX1zN5n45nev1/A9wS/LRu7n9GwAAAABJRU5ErkJggg=="
+            type="image/x-icon"
+            sizes="32x32"
+        />
+        <meta
+            name="description"
+            content="Product-minded fullstack engineer with over 15 years of production experience. Studied both design and engineering — engineering won, but the design background keeps me focused on building products that actually work for people. I work across the stack with TypeScript, React, Node.js, Go, and various databases."
+        />
 
-    <!-- prettier-ignore -->
-    <style>
+        <!-- prettier-ignore -->
+        <style>
       :root {
         --primary: 220.9 39.3% 11%;
         --text-secondary: 220 8.9% 46.1%;
@@ -114,338 +114,391 @@
       @media print { .print\:hidden { display: none; } }
       @media print { .print\:flex { display: block; } }
     </style>
-  </head>
+    </head>
 
-  <body>
-    <main
-      class="relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 print:p-12"
-    >
-      <div class="max-w-2xl mx-auto space-y-8">
-        <div class="flex items-center">
-          <div class="flex-1 space-y-1.5">
-            <h1>Anton Kalinin</h1>
-            <p class="max-w-md font-mono text-secondary">
-              Product-focused fullstack engineer with 15+ years of production
-              experience
-            </p>
-            <address class="font-mono text-xs text-secondary">
-              <a
-                class="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
-                href="https://www.google.com/maps/place/Helsinki"
-                target="_blank"
-              >
-                <svg
-                  class="h-3 w-3"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <path
-                    d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
-                  ></path>
-                  <path d="M2 12h20"></path>
-                </svg>
-                Helsinki, Finland, EET
-              </a>
-            </address>
-            <div class="flex gap-x-1 pt-1 print:hidden">
-              <a
-                href="mailto:hurricanebox@gmail.com"
-                class="inline-flex items-center justify-center rounded-md text-sm border border-input hover:bg-accent hover:text-accent-foreground h-8 w-8 text-secondary"
-              >
-                <svg
-                  xmlns=" http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="w-4 h-4"
-                >
-                  <title>Email</title>
-                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                </svg>
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/antonKalinin"
-                class="inline-flex items-center justify-center rounded-md text-sm border border-input hover:bg-accent hover:text-accent-foreground h-8 w-8 text-secondary"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-4 h-4"
-                >
-                  <title>GitHub</title>
-                  <path
-                    fill="currentColor"
-                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  ></path>
-                </svg>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/anton-kalinin/"
-                class="inline-flex items-center justify-center rounded-md text-sm border border-input hover:bg-accent hover:text-accent-foreground h-8 w-8 text-secondary"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-4 h-4"
-                >
-                  <title>LinkedIn</title>
-                  <path
-                    fill="currentColor"
-                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                  ></path>
-                </svg>
-              </a>
-              <a
-                target="_blank"
-                href="https://twitter.com/antonkaa"
-                class="inline-flex items-center justify-center rounded-md text-sm border border-input hover:bg-accent hover:text-accent-foreground h-8 w-8 text-secondary"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-4 h-4"
-                >
-                  <title>X</title>
-                  <path
-                    fill="currentColor"
-                    d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-            <div
-              class="hidden flex-col gap-x-1 font-mono text-sm text-secondary print:flex"
-            >
-              <span class="underline">hurricanebox@gmail.com</span>
-            </div>
-          </div>
-          <img
-            class="flex rounded-xl h-28 w-28"
-            alt="Anton Kalinin"
-            src="https://gist.githubusercontent.com/antonKalinin/8f4e0dbe8a2b90e0d4f54ff6646405a4/raw/80ce26cd2ec39f456c25b190e75fdce83965c988/portrait.jpg"
-          />
-        </div>
-
-        <section class="flex flex-col gap-y-3">
-          <h2>About</h2>
-          <p class="font-mono text-secondary">
-            Product-minded fullstack engineer with over 15 years of production
-            experience. I studied both design and engineering — engineering won,
-            but the design background keeps me focused on building products that
-            actually work for people. I work across the stack with TypeScript,
-            React, Node.js, Go, and various databases, and I care most about
-            solving real business problems end to end.
-          </p>
-        </section>
-
-        <section class="flex flex-col gap-y-3">
-          <h2>Work Experience</h2>
-
-          <div>
-            <div class="flex flex-col space-y-1.5">
-              <div class="flex items-center justify-between text-base">
-                <h3
-                  class="inline-flex justify-center items-center leading-none"
-                >
-                  <a class="hover:underline" href="https://wolt.com">Wolt</a>
-                </h3>
-                <div class="text-sm tabular-nums text-secondary">
-                  2020<!-- -->
-                  -
-                  <!-- -->now
+    <body>
+        <main
+            class="relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 print:p-12"
+        >
+            <div class="max-w-2xl mx-auto space-y-8">
+                <div class="flex items-center">
+                    <div class="flex-1 space-y-1.5">
+                        <h1>Anton Kalinin</h1>
+                        <p class="max-w-md font-mono text-secondary">
+                            Product-focused fullstack engineer with 15+ years of
+                            production experience
+                        </p>
+                        <address class="font-mono text-xs text-secondary">
+                            <a
+                                class="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
+                                href="https://www.google.com/maps/place/Helsinki"
+                                target="_blank"
+                            >
+                                <svg
+                                    class="h-3 w-3"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path
+                                        d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                                    ></path>
+                                    <path d="M2 12h20"></path>
+                                </svg>
+                                Helsinki, Finland, EET
+                            </a>
+                        </address>
+                        <div class="flex gap-x-1 pt-1 print:hidden">
+                            <a
+                                href="mailto:hurricanebox@gmail.com"
+                                class="inline-flex items-center justify-center rounded-md text-sm border border-input hover:bg-accent hover:text-accent-foreground h-8 w-8 text-secondary"
+                            >
+                                <svg
+                                    xmlns=" http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-4 h-4"
+                                >
+                                    <title>Email</title>
+                                    <rect
+                                        width="20"
+                                        height="16"
+                                        x="2"
+                                        y="4"
+                                        rx="2"
+                                    ></rect>
+                                    <path
+                                        d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a
+                                target="_blank"
+                                href="https://github.com/antonKalinin"
+                                class="inline-flex items-center justify-center rounded-md text-sm border border-input hover:bg-accent hover:text-accent-foreground h-8 w-8 text-secondary"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="w-4 h-4"
+                                >
+                                    <title>GitHub</title>
+                                    <path
+                                        fill="currentColor"
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a
+                                target="_blank"
+                                href="https://www.linkedin.com/in/anton-kalinin/"
+                                class="inline-flex items-center justify-center rounded-md text-sm border border-input hover:bg-accent hover:text-accent-foreground h-8 w-8 text-secondary"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="w-4 h-4"
+                                >
+                                    <title>LinkedIn</title>
+                                    <path
+                                        fill="currentColor"
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                                    ></path>
+                                </svg>
+                            </a>
+                            <a
+                                target="_blank"
+                                href="https://twitter.com/antonkaa"
+                                class="inline-flex items-center justify-center rounded-md text-sm border border-input hover:bg-accent hover:text-accent-foreground h-8 w-8 text-secondary"
+                            >
+                                <svg
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="w-4 h-4"
+                                >
+                                    <title>X</title>
+                                    <path
+                                        fill="currentColor"
+                                        d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+                                    ></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div
+                            class="hidden flex-col gap-x-1 font-mono text-sm text-secondary print:flex"
+                        >
+                            <span class="underline"
+                                >hurricanebox@gmail.com</span
+                            >
+                        </div>
+                    </div>
+                    <img
+                        class="flex rounded-xl h-28 w-28"
+                        alt="Anton Kalinin"
+                        src="https://gist.githubusercontent.com/antonKalinin/8f4e0dbe8a2b90e0d4f54ff6646405a4/raw/80ce26cd2ec39f456c25b190e75fdce83965c988/portrait.jpg"
+                    />
                 </div>
-              </div>
-              <h4 class="leading-none font-mono">
-                Software Engineer → Senior Software Engineer
-              </h4>
-            </div>
-            <div class="text-secondary text-xs font-mono mt-2">
-              Built a proactive monitoring tool for support — collaborative and
-              realtime, it tracked order issues as they happened and coordinated
-              work between support associates to mitigate them. Made issues
-              searchable with all actions at hand. Then built the chat system
-              that replaced Intercom: rich and scalable UI with all needed
-              context on a single screen, flexible conversation assignment,
-              chat APIs, prioritization, and email integration. This was key to
-              moving away from a costly third-party provider. Technologies:
-              React, TypeScript, Node.js, Go, Postgres, MongoDB, Cassandra,
-              Kafka, Grafana
-            </div>
-          </div>
 
-          <div>
-            <div class="flex flex-col space-y-1.5">
-              <div class="flex items-center justify-between text-base">
-                <h3
-                  class="inline-flex justify-center items-center leading-none"
-                >
-                  <a class="hover:underline" href="https://jobtoday.com"
-                    >JobToday</a
-                  >
-                </h3>
-                <div class="text-sm tabular-nums text-secondary">
-                  2018<!-- -->
-                  -
-                  <!-- -->2020
-                </div>
-              </div>
-              <h4 class="leading-none font-mono">Senior Frontend Engineer</h4>
-            </div>
-            <div class="text-secondary text-xs font-mono mt-2">
-              Architecting and developing JOB TODAY native and web apps (mobile
-              + desktop). Managing common crossplatform codebase, leading small
-              projects in group of 3 people. Technologies: React, React Native,
-              Redux, TypeScript, Node.js
-            </div>
-          </div>
+                <section class="flex flex-col gap-y-3">
+                    <h2>About</h2>
+                    <p class="font-mono text-secondary">
+                        Product-minded fullstack engineer with over 15 years of
+                        production experience. I studied both design and
+                        engineering — engineering won, but the design background
+                        keeps me focused on building products that actually work
+                        for people. I work across the stack with TypeScript,
+                        React, Node.js, Go, and various databases, and I care
+                        most about solving real business problems end to end.
+                    </p>
+                </section>
 
-          <div>
-            <div class="flex flex-col space-y-1.5">
-              <div class="flex items-center justify-between text-base">
-                <h3
-                  class="inline-flex justify-center items-center leading-none"
-                >
-                  <a
-                    class="hover:underline"
-                    href="https://cloud.yandex.com/en/services/tracker"
-                    >Yandex</a
-                  >
-                </h3>
-                <div class="text-sm tabular-nums text-secondary">
-                  2013<!-- -->
-                  -
-                  <!-- -->2018
-                </div>
-              </div>
-              <h4 class="leading-none font-mono">Frontend Engineer</h4>
-            </div>
-            <div class="text-secondary text-xs font-mono mt-2">
-              Built the UI for Yandex.Tracker, a task management system — lots
-              of heavy UI work: multi-task editing, Gantt charts, task view
-              features, an email-based ticket system, and a mobile app. My work
-              helped Yandex white-label Tracker as a B2B product. Technologies:
-              JavaScript, React, React Native, Redux, Node.js
-            </div>
-          </div>
+                <section class="flex flex-col gap-y-3">
+                    <h2>Work Experience</h2>
 
-          <div>
-            <div class="flex flex-col space-y-1.5">
-              <div class="flex items-center justify-between text-base">
-                <h3
-                  class="inline-flex justify-center items-center leading-none"
-                >
-                  <a
-                    class="hover:underline"
-                    href="https://cloud.yandex.com/en/services/tracker"
-                    >Fotostrana</a
-                  >
-                </h3>
-                <div class="text-sm tabular-nums text-secondary">
-                  2011<!-- -->
-                  -
-                  <!-- -->2013
-                </div>
-              </div>
-              <h4 class="leading-none font-mono">Software Engineer</h4>
-            </div>
-            <div class="text-secondary text-xs font-mono mt-2">
-              As a full stack engineer: developed key website components focused
-              on attracting new users. This includes crafting user-friendly
-              landing pages, and implementing efficient mailing systems.
-              Technologies: PHP, MySQL, Memcached, Zend Framework, JavaScript,
-              jQuery
-            </div>
-          </div>
-        </section>
+                    <div>
+                        <div class="flex flex-col space-y-1.5">
+                            <div
+                                class="flex items-center justify-between text-base"
+                            >
+                                <h3
+                                    class="inline-flex justify-center items-center leading-none"
+                                >
+                                    <a
+                                        class="hover:underline"
+                                        href="https://wolt.com"
+                                        >Wolt</a
+                                    >
+                                </h3>
+                                <div
+                                    class="text-sm tabular-nums text-secondary"
+                                >
+                                    2020<!-- -->
+                                    -
+                                    <!-- -->now
+                                </div>
+                            </div>
+                            <h4 class="leading-none font-mono">
+                                Software Engineer → Senior Software Engineer
+                            </h4>
+                        </div>
+                        <div class="text-secondary text-xs font-mono mt-2">
+                            Designed and built internal support tooling used to
+                            proactively detect and manage order issues in real
+                            time, enabling coordinated workflows across support
+                            teams and reducing resolution time. Led development
+                            of a scalable in-house communication platform
+                            replacing a third-party solution, featuring a
+                            unified context-rich interface, flexible
+                            conversation routing, prioritization, and
+                            multi-channel support (chat + email). This
+                            significantly improved operational efficiency and
+                            reduced external dependency costs. Technologies:
+                            React, TypeScript, Node.js, Go, Postgres, MongoDB,
+                            Cassandra, Kafka, Grafana
+                        </div>
+                    </div>
 
-        <section class="flex flex-col gap-y-3">
-          <h2>Education</h2>
-          <div>
-            <div class="flex flex-col space-y-1.5">
-              <div class="flex items-center justify-between gap-x-2 text-base">
-                <h3 class="font-semibold leading-none">
-                  Peter the Great St.Petersburg Polytechnic University
-                </h3>
-                <div class="text-sm tabular-nums text-secondary">
-                  2007<!-- -->
-                  -
-                  <!-- -->2013
-                </div>
-              </div>
-            </div>
-            <div class="font-mono text-sm text-secondary mt-2">
-              Master's Degree in Information Technology
-            </div>
-          </div>
-        </section>
+                    <div>
+                        <div class="flex flex-col space-y-1.5">
+                            <div
+                                class="flex items-center justify-between text-base"
+                            >
+                                <h3
+                                    class="inline-flex justify-center items-center leading-none"
+                                >
+                                    <a
+                                        class="hover:underline"
+                                        href="https://jobtoday.com"
+                                        >JobToday</a
+                                    >
+                                </h3>
+                                <div
+                                    class="text-sm tabular-nums text-secondary"
+                                >
+                                    2018<!-- -->
+                                    -
+                                    <!-- -->2020
+                                </div>
+                            </div>
+                            <h4 class="leading-none font-mono">
+                                Senior Frontend Engineer
+                            </h4>
+                        </div>
+                        <div class="text-secondary text-xs font-mono mt-2">
+                            Architecting and developing JOB TODAY native and web
+                            apps (mobile + desktop). Managing common
+                            crossplatform codebase, leading small projects in
+                            group of 3 people. Technologies: React, React
+                            Native, Redux, TypeScript, Node.js
+                        </div>
+                    </div>
 
-        <section class="flex flex-col gap-y-3">
-          <h2>Skills</h2>
-          <div class="flex flex-wrap gap-1">
-            <div
-              class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
-            >
-              JavaScript
+                    <div>
+                        <div class="flex flex-col space-y-1.5">
+                            <div
+                                class="flex items-center justify-between text-base"
+                            >
+                                <h3
+                                    class="inline-flex justify-center items-center leading-none"
+                                >
+                                    <a
+                                        class="hover:underline"
+                                        href="https://cloud.yandex.com/en/services/tracker"
+                                        >Yandex</a
+                                    >
+                                </h3>
+                                <div
+                                    class="text-sm tabular-nums text-secondary"
+                                >
+                                    2013<!-- -->
+                                    -
+                                    <!-- -->2018
+                                </div>
+                            </div>
+                            <h4 class="leading-none font-mono">
+                                Frontend Engineer
+                            </h4>
+                        </div>
+                        <div class="text-secondary text-xs font-mono mt-2">
+                            Developed complex user interfaces for
+                            Yandex.Tracker, a large-scale task management
+                            platform, including advanced features such as
+                            multi-entity editing, Gantt charts, and real-time
+                            task workflows. Contributed to the evolution of the
+                            product into a white-label B2B solution by building
+                            scalable UI components, an email-driven ticketing
+                            system, and mobile applications. Technologies:
+                            JavaScript, React, React Native, Redux, Node.js
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex flex-col space-y-1.5">
+                            <div
+                                class="flex items-center justify-between text-base"
+                            >
+                                <h3
+                                    class="inline-flex justify-center items-center leading-none"
+                                >
+                                    <a
+                                        class="hover:underline"
+                                        href="https://cloud.yandex.com/en/services/tracker"
+                                        >Fotostrana</a
+                                    >
+                                </h3>
+                                <div
+                                    class="text-sm tabular-nums text-secondary"
+                                >
+                                    2011<!-- -->
+                                    -
+                                    <!-- -->2013
+                                </div>
+                            </div>
+                            <h4 class="leading-none font-mono">
+                                Software Engineer
+                            </h4>
+                        </div>
+                        <div class="text-secondary text-xs font-mono mt-2">
+                            As a full stack engineer: developed key website
+                            components focused on attracting new users. This
+                            includes crafting user-friendly landing pages, and
+                            implementing efficient mailing systems.
+                            Technologies: PHP, MySQL, Memcached, Zend Framework,
+                            JavaScript, jQuery
+                        </div>
+                    </div>
+                </section>
+
+                <section class="flex flex-col gap-y-3">
+                    <h2>Education</h2>
+                    <div>
+                        <div class="flex flex-col space-y-1.5">
+                            <div
+                                class="flex items-center justify-between gap-x-2 text-base"
+                            >
+                                <h3 class="font-semibold leading-none">
+                                    Peter the Great St.Petersburg Polytechnic
+                                    University
+                                </h3>
+                                <div
+                                    class="text-sm tabular-nums text-secondary"
+                                >
+                                    2007<!-- -->
+                                    -
+                                    <!-- -->2013
+                                </div>
+                            </div>
+                        </div>
+                        <div class="font-mono text-sm text-secondary mt-2">
+                            Master's Degree in Information Technology
+                        </div>
+                    </div>
+                </section>
+
+                <section class="flex flex-col gap-y-3">
+                    <h2>Skills</h2>
+                    <div class="flex flex-wrap gap-1">
+                        <div
+                            class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
+                        >
+                            JavaScript
+                        </div>
+                        <div
+                            class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
+                        >
+                            TypeScript
+                        </div>
+                        <div
+                            class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
+                        >
+                            React/ReactNative
+                        </div>
+                        <div
+                            class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
+                        >
+                            Node.js
+                        </div>
+                        <div
+                            class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
+                        >
+                            Go
+                        </div>
+                        <div
+                            class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
+                        >
+                            PostgreSQL
+                        </div>
+                        <div
+                            class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
+                        >
+                            MongoDB
+                        </div>
+                        <div
+                            class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
+                        >
+                            Kafka
+                        </div>
+                        <div
+                            class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
+                        >
+                            Rust
+                        </div>
+                    </div>
+                </section>
             </div>
-            <div
-              class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
-            >
-              TypeScript
-            </div>
-            <div
-              class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
-            >
-              React/ReactNative
-            </div>
-            <div
-              class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
-            >
-              Node.js
-            </div>
-            <div
-              class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
-            >
-              Go
-            </div>
-            <div
-              class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
-            >
-              PostgreSQL
-            </div>
-            <div
-              class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
-            >
-              MongoDB
-            </div>
-            <div
-              class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
-            >
-              Kafka
-            </div>
-            <div
-              class="inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold font-mono bg-primary/80 text-primary-foreground"
-            >
-              Rust
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-  </body>
+        </main>
+    </body>
 </html>
